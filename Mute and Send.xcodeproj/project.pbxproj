@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31BB12429F8ECD200431947 /* X32OSCComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12329F8ECD200431947 /* X32OSCComms.swift */; };
+		B31BB12629FB85EB00431947 /* ControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12529FB85EB00431947 /* ControlViewModel.swift */; };
+		B31BB12829FCDB1100431947 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12729FCDB1100431947 /* ContentView.swift */; };
+		B31BB12A29FCDB6100431947 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12929FCDB6100431947 /* SettingsView.swift */; };
+		B31BB12C29FCDB9300431947 /* BusMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12B29FCDB9300431947 /* BusMasterView.swift */; };
+		B31BB1302A01E3A800431947 /* MixerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12F2A01E3A800431947 /* MixerManager.swift */; };
+		B31BB1322A02F36A00431947 /* SupportedMixers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1312A02F36A00431947 /* SupportedMixers.swift */; };
+		B31BB1362A04C7F800431947 /* MixerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1352A04C7F800431947 /* MixerSelectionView.swift */; };
+		B31BB1382A04C9B600431947 /* MixerAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1372A04C9B600431947 /* MixerAddView.swift */; };
 		B3FA81CE29DD61BD00F8833A /* Mute_and_SendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81CD29DD61BD00F8833A /* Mute_and_SendApp.swift */; };
-		B3FA81D029DD61BD00F8833A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81CF29DD61BD00F8833A /* ContentView.swift */; };
+		B3FA81D029DD61BD00F8833A /* FaderMuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81CF29DD61BD00F8833A /* FaderMuteView.swift */; };
 		B3FA81D229DD61BF00F8833A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FA81D129DD61BF00F8833A /* Assets.xcassets */; };
 		B3FA81D529DD61BF00F8833A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FA81D429DD61BF00F8833A /* Preview Assets.xcassets */; };
+		B3FA81DC29DD61F500F8833A /* ChannelRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81DB29DD61F500F8833A /* ChannelRowView.swift */; };
+		B3FA81DE29DD64EE00F8833A /* ChannelSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81DD29DD64EE00F8833A /* ChannelSendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B31BB12329F8ECD200431947 /* X32OSCComms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X32OSCComms.swift; sourceTree = "<group>"; };
+		B31BB12529FB85EB00431947 /* ControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewModel.swift; sourceTree = "<group>"; };
+		B31BB12729FCDB1100431947 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B31BB12929FCDB6100431947 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B31BB12B29FCDB9300431947 /* BusMasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusMasterView.swift; sourceTree = "<group>"; };
+		B31BB12F2A01E3A800431947 /* MixerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerManager.swift; sourceTree = "<group>"; };
+		B31BB1312A02F36A00431947 /* SupportedMixers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedMixers.swift; sourceTree = "<group>"; };
+		B31BB1352A04C7F800431947 /* MixerSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerSelectionView.swift; sourceTree = "<group>"; };
+		B31BB1372A04C9B600431947 /* MixerAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerAddView.swift; sourceTree = "<group>"; };
 		B3FA81CA29DD61BD00F8833A /* Mute and Send.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mute and Send.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FA81CD29DD61BD00F8833A /* Mute_and_SendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mute_and_SendApp.swift; sourceTree = "<group>"; };
-		B3FA81CF29DD61BD00F8833A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3FA81CF29DD61BD00F8833A /* FaderMuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaderMuteView.swift; sourceTree = "<group>"; };
 		B3FA81D129DD61BF00F8833A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3FA81D429DD61BF00F8833A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3FA81DB29DD61F500F8833A /* ChannelRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRowView.swift; sourceTree = "<group>"; };
+		B3FA81DD29DD64EE00F8833A /* ChannelSendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +73,21 @@
 		B3FA81CC29DD61BD00F8833A /* Mute and Send */ = {
 			isa = PBXGroup;
 			children = (
+				B31BB12929FCDB6100431947 /* SettingsView.swift */,
 				B3FA81CD29DD61BD00F8833A /* Mute_and_SendApp.swift */,
-				B3FA81CF29DD61BD00F8833A /* ContentView.swift */,
+				B3FA81CF29DD61BD00F8833A /* FaderMuteView.swift */,
+				B31BB12729FCDB1100431947 /* ContentView.swift */,
+				B31BB1352A04C7F800431947 /* MixerSelectionView.swift */,
+				B31BB1372A04C9B600431947 /* MixerAddView.swift */,
+				B31BB12B29FCDB9300431947 /* BusMasterView.swift */,
+				B3FA81DB29DD61F500F8833A /* ChannelRowView.swift */,
+				B3FA81DD29DD64EE00F8833A /* ChannelSendView.swift */,
 				B3FA81D129DD61BF00F8833A /* Assets.xcassets */,
 				B3FA81D329DD61BF00F8833A /* Preview Content */,
+				B31BB12329F8ECD200431947 /* X32OSCComms.swift */,
+				B31BB12529FB85EB00431947 /* ControlViewModel.swift */,
+				B31BB12F2A01E3A800431947 /* MixerManager.swift */,
+				B31BB1312A02F36A00431947 /* SupportedMixers.swift */,
 			);
 			path = "Mute and Send";
 			sourceTree = "<group>";
@@ -137,8 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FA81D029DD61BD00F8833A /* ContentView.swift in Sources */,
+				B31BB1322A02F36A00431947 /* SupportedMixers.swift in Sources */,
+				B31BB1362A04C7F800431947 /* MixerSelectionView.swift in Sources */,
+				B3FA81D029DD61BD00F8833A /* FaderMuteView.swift in Sources */,
+				B31BB1382A04C9B600431947 /* MixerAddView.swift in Sources */,
+				B31BB12A29FCDB6100431947 /* SettingsView.swift in Sources */,
 				B3FA81CE29DD61BD00F8833A /* Mute_and_SendApp.swift in Sources */,
+				B31BB1302A01E3A800431947 /* MixerManager.swift in Sources */,
+				B31BB12829FCDB1100431947 /* ContentView.swift in Sources */,
+				B31BB12629FB85EB00431947 /* ControlViewModel.swift in Sources */,
+				B3FA81DE29DD64EE00F8833A /* ChannelSendView.swift in Sources */,
+				B31BB12429F8ECD200431947 /* X32OSCComms.swift in Sources */,
+				B3FA81DC29DD61F500F8833A /* ChannelRowView.swift in Sources */,
+				B31BB12C29FCDB9300431947 /* BusMasterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
