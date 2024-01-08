@@ -36,20 +36,26 @@ struct MixerSelectionView: View {
                                 selectedMixer = profile.id
                             }
                         }
+#if os(iOS)
                         .onDelete(perform: {indices in
                             print("Attempt to delete \(indices.first!)")
                             MixerManager.shared.deleteMixer(mixerUUID: MixerManager.shared.mixerProfiles[indices.first!].id)
                         })
                         .deleteDisabled(MixerManager.shared.mixerProfiles.count <= 1)
+#endif
                     }
                 }
+#if os(iOS)
                 Section{
                     Button("Add..."){
                         showingSheet.toggle()
                     }
                 }
+#endif
             }.sheet(isPresented: $showingSheet) {
+#if os(iOS)
                 MixerAddView()
+#endif
             }
             .onChange(of: selectedMixer, perform: {newValue in
                 MixerManager.shared.setActiveMixer(activeMixerID: newValue)

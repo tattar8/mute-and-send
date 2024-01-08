@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var noMixerDefined = false
     @ObservedObject var mixerManager = MixerManager.shared
     @ObservedObject var activeMixer = MixerManager.shared.activeMixer
+    private var watchComms = WatchConnection.shared
     
     @Environment(\.scenePhase) var scenePhase
     
