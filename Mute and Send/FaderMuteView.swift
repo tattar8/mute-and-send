@@ -41,7 +41,7 @@ struct FaderMuteView: View {
                 ChannelRowView(channelName: viewModel.channelNames[row.num - 1], faderLevel: faderBinding, unmuted: muteBinding, chColor: row.color, chColorInv: row.colorInv)
             }
             else{
-                ChannelSendView(sendMuted: muteBinding, busName: viewModel.busNames[row.num - 1], busNumber: row.num)
+                ChannelSendView(sendMuted: muteBinding, busName: viewModel.busNames[row.num - 1], busNumber: row.num, chColor: viewModel.busMasters[row.num-1].color, chColorInv: viewModel.busMasters[row.num-1].colorInv)
             }
         }
     }

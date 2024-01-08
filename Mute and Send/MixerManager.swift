@@ -52,9 +52,60 @@ class MixerManager: ObservableObject{
                 allMixerModels.updateValue(ControlViewModel(addressIn: profile.ipAddress, portIn: profile.port, mixerType: SupportedMixers.MixerType(rawValue: profile.type) ?? .X32), forKey: profile.id)
             }
         }
-        activeMixer = allMixerModels[mixerProfiles[0].id]!
-        activeMixerProfile = mixerProfiles[0]
+        
         self.mixerProfiles = mixerProfiles
+        
+        if let savedActiveMixerString = UserDefaults.standard.object(forKey: "activeMixerID") as? String{
+            let savedActiveMixerUUID = UUID(uuidString: savedActiveMixerString)!
+            activeMixer = allMixerModels[savedActiveMixerUUID] ?? allMixerModels[mixerProfiles[0].id]!
+            activeMixerProfile = mixerProfiles.first(where: {$0.id == savedActiveMixerUUID}) ?? mixerProfiles[0]
+        }
+        else{
+            activeMixer = allMixerModels[mixerProfiles[0].id]!
+            activeMixerProfile = mixerProfiles[0]
+            UserDefaults.standard.set(activeMixerProfile.id.uuidString, forKey: "activeMixerID")
+            
+        }
+    }
+    
+    //I know, redundant
+    func reinit(){
+        var mixerProfiles = UserDefaults.standard.object(forKey: "MixerProfiles") as? [MixerManager.MixerProfile] ?? []
+        
+        if
+            let data = UserDefaults.standard.value(forKey: "MixerProfilesJson") as? Data,
+            let profiles = try? JSONDecoder().decode([MixerProfile].self, from: data) {
+            print(profiles)
+            mixerProfiles = profiles
+        }
+        else{
+            mixerProfiles = []
+        }
+        allMixerModels = [:]
+        
+        if (mixerProfiles.isEmpty){
+            let dummy: MixerProfile = MixerProfile(channelsEnabled: [Bool](repeating: true, count: 6), busesEnabled: [Bool](repeating: true, count: 12), ipAddress: "0.0.0.0", port: "1", name: "Dummy", type: SupportedMixers.MixerType.X32.rawValue)
+            mixerProfiles.append(dummy)
+            allMixerModels.updateValue(ControlViewModel(addressIn: "0.0.0.0", portIn: "1", mixerType: .X32), forKey: dummy.id)
+        }
+        
+        else{
+            for profile in mixerProfiles{
+                allMixerModels.updateValue(ControlViewModel(addressIn: profile.ipAddress, portIn: profile.port, mixerType: SupportedMixers.MixerType(rawValue: profile.type) ?? .X32), forKey: profile.id)
+            }
+        }
+        self.mixerProfiles = mixerProfiles
+        
+        if let savedActiveMixerString = UserDefaults.standard.object(forKey: "activeMixerID") as? String{
+            let savedActiveMixerUUID = UUID(uuidString: savedActiveMixerString)!
+            activeMixer = allMixerModels[savedActiveMixerUUID] ?? allMixerModels[mixerProfiles[0].id]!
+            activeMixerProfile = mixerProfiles.first(where: {$0.id == savedActiveMixerUUID}) ?? mixerProfiles[0]
+        }
+        else{
+            activeMixer = allMixerModels[mixerProfiles[0].id]!
+            activeMixerProfile = mixerProfiles[0]
+            UserDefaults.standard.set(activeMixerProfile.id.uuidString, forKey: "activeMixerID")
+        }
     }
     
     func addNewMixer(address: String, port: String, type: SupportedMixers.MixerType, name: String, channelEnables: [Bool] = [], busEnables: [Bool] = []){
@@ -75,6 +126,9 @@ class MixerManager: ObservableObject{
         
         if let data = try? JSONEncoder().encode(mixerProfiles) {
             UserDefaults.standard.set(data, forKey: "MixerProfilesJson")
+            #if os(iOS)
+            WatchConnection.shared.sendAppContext(dataDictIn: ["MixerProfilesJson":data])
+            #endif
         }
 
         
@@ -83,6 +137,7 @@ class MixerManager: ObservableObject{
         if (mixerProfiles.count == 1){
             activeMixer = allMixerModels[newProfile.id]!
             activeMixerProfile = newProfile
+            UserDefaults.standard.set(activeMixerProfile.id.uuidString, forKey: "activeMixerID")
         }
         
         //UserDefaults.standard.set(mixerProfiles, forKey: "MixerProfiles")
@@ -92,12 +147,14 @@ class MixerManager: ObservableObject{
     func setActiveMixer(activeMixerProfile:MixerProfile){
         activeMixer = allMixerModels[activeMixerProfile.id]!
         self.activeMixerProfile = activeMixerProfile
+        UserDefaults.standard.set(activeMixerProfile.id.uuidString, forKey: "activeMixerID")
     }
     
     func setActiveMixer(activeMixerID:UUID){
         if ((allMixerModels[activeMixerID]) != nil){
             activeMixer = allMixerModels[activeMixerID]!
             self.activeMixerProfile = mixerProfiles.first(where: {$0.id == activeMixerID})!
+            UserDefaults.standard.set(activeMixerProfile.id.uuidString, forKey: "activeMixerID")
         }
     }
     
@@ -109,6 +166,24 @@ class MixerManager: ObservableObject{
             //deleting the active mixer
             activeMixerProfile = mixerProfiles[0]
             activeMixer = allMixerModels[activeMixerProfile.id]!
+            UserDefaults.standard.set(activeMixerProfile.id.uuidString, forKey: "activeMixerID")
+        }
+        
+        if let data = try? JSONEncoder().encode(mixerProfiles) {
+            UserDefaults.standard.set(data, forKey: "MixerProfilesJson")
+            #if os(iOS)
+            WatchConnection.shared.sendAppContext(dataDictIn: ["MixerProfilesJson":data])
+            #endif
         }
     }
+    
+    func enabledFilter(_ channel: Control) -> Bool{
+        if (channel.isChannel){
+            return activeMixerProfile.channelsEnabled[channel.num - 1]
+        }
+        else{
+            return activeMixerProfile.busesEnabled[channel.num - 1]
+        }
+    }
+    
 }

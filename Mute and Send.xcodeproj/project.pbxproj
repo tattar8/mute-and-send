@@ -16,13 +16,57 @@
 		B31BB1322A02F36A00431947 /* SupportedMixers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1312A02F36A00431947 /* SupportedMixers.swift */; };
 		B31BB1362A04C7F800431947 /* MixerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1352A04C7F800431947 /* MixerSelectionView.swift */; };
 		B31BB1382A04C9B600431947 /* MixerAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1372A04C9B600431947 /* MixerAddView.swift */; };
+		B3648A542A0B8C5E00D277EB /* Mute_and_Send_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A532A0B8C5E00D277EB /* Mute_and_Send_WatchApp.swift */; };
+		B3648A562A0B8C5E00D277EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A552A0B8C5E00D277EB /* ContentView.swift */; };
+		B3648A582A0B8C5F00D277EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3648A572A0B8C5F00D277EB /* Assets.xcassets */; };
+		B3648A5B2A0B8C5F00D277EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3648A5A2A0B8C5F00D277EB /* Preview Assets.xcassets */; };
+		B3648A5F2A0B8C6800D277EB /* X32OSCComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12329F8ECD200431947 /* X32OSCComms.swift */; };
+		B3648A602A0B8C6B00D277EB /* ControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12529FB85EB00431947 /* ControlViewModel.swift */; };
+		B3648A612A0B8C6D00D277EB /* MixerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB12F2A01E3A800431947 /* MixerManager.swift */; };
+		B3648A622A0B8C6F00D277EB /* SupportedMixers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1312A02F36A00431947 /* SupportedMixers.swift */; };
+		B3648A642A0B8CAF00D277EB /* WatchCommunications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A632A0B8CAF00D277EB /* WatchCommunications.swift */; };
+		B3648A652A0B8D0A00D277EB /* WatchCommunications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A632A0B8CAF00D277EB /* WatchCommunications.swift */; };
+		B3648A672A0C0A6D00D277EB /* Mute and Send Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B3648A512A0B8C5E00D277EB /* Mute and Send Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B3648A6D2A0C439700D277EB /* ChannelSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81DD29DD64EE00F8833A /* ChannelSendView.swift */; };
+		B3648A6E2A0C43FE00D277EB /* FaderMuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81CF29DD61BD00F8833A /* FaderMuteView.swift */; };
+		B3648A702A0C441000D277EB /* ChannelListWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A6F2A0C441000D277EB /* ChannelListWatchView.swift */; };
+		B3648A722A0C49C900D277EB /* MixerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1352A04C7F800431947 /* MixerSelectionView.swift */; };
+		B3648A732A0C4A7D00D277EB /* MixerAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BB1372A04C9B600431947 /* MixerAddView.swift */; };
+		B3648A752A0C4BDB00D277EB /* ChannelRowWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A742A0C4BDB00D277EB /* ChannelRowWatchView.swift */; };
+		B3648A782A0C4C8B00D277EB /* BusMasterWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A772A0C4C8B00D277EB /* BusMasterWatchView.swift */; };
+		B3648A7A2A0C9AE300D277EB /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A792A0C9AE300D277EB /* TestView.swift */; };
+		B3648A9D2A0CB06D00D277EB /* BusSendWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A9C2A0CB06D00D277EB /* BusSendWatchView.swift */; };
+		B3648A9F2A0CB1EB00D277EB /* BusRowWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3648A9E2A0CB1EB00D277EB /* BusRowWatchView.swift */; };
 		B3FA81CE29DD61BD00F8833A /* Mute_and_SendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81CD29DD61BD00F8833A /* Mute_and_SendApp.swift */; };
-		B3FA81D029DD61BD00F8833A /* FaderMuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81CF29DD61BD00F8833A /* FaderMuteView.swift */; };
 		B3FA81D229DD61BF00F8833A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FA81D129DD61BF00F8833A /* Assets.xcassets */; };
 		B3FA81D529DD61BF00F8833A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FA81D429DD61BF00F8833A /* Preview Assets.xcassets */; };
 		B3FA81DC29DD61F500F8833A /* ChannelRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81DB29DD61F500F8833A /* ChannelRowView.swift */; };
 		B3FA81DE29DD64EE00F8833A /* ChannelSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA81DD29DD64EE00F8833A /* ChannelSendView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3648A682A0C0A6D00D277EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3FA81C229DD61BD00F8833A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3648A502A0B8C5E00D277EB;
+			remoteInfo = "Mute and Send Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3648A6A2A0C0A6D00D277EB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B3648A672A0C0A6D00D277EB /* Mute and Send Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B31BB12329F8ECD200431947 /* X32OSCComms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X32OSCComms.swift; sourceTree = "<group>"; };
@@ -34,6 +78,18 @@
 		B31BB1312A02F36A00431947 /* SupportedMixers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedMixers.swift; sourceTree = "<group>"; };
 		B31BB1352A04C7F800431947 /* MixerSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerSelectionView.swift; sourceTree = "<group>"; };
 		B31BB1372A04C9B600431947 /* MixerAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerAddView.swift; sourceTree = "<group>"; };
+		B3648A512A0B8C5E00D277EB /* Mute and Send Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mute and Send Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3648A532A0B8C5E00D277EB /* Mute_and_Send_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mute_and_Send_WatchApp.swift; sourceTree = "<group>"; };
+		B3648A552A0B8C5E00D277EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3648A572A0B8C5F00D277EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3648A5A2A0B8C5F00D277EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3648A632A0B8CAF00D277EB /* WatchCommunications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCommunications.swift; sourceTree = "<group>"; };
+		B3648A6F2A0C441000D277EB /* ChannelListWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListWatchView.swift; sourceTree = "<group>"; };
+		B3648A742A0C4BDB00D277EB /* ChannelRowWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRowWatchView.swift; sourceTree = "<group>"; };
+		B3648A772A0C4C8B00D277EB /* BusMasterWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusMasterWatchView.swift; sourceTree = "<group>"; };
+		B3648A792A0C9AE300D277EB /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		B3648A9C2A0CB06D00D277EB /* BusSendWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSendWatchView.swift; sourceTree = "<group>"; };
+		B3648A9E2A0CB1EB00D277EB /* BusRowWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRowWatchView.swift; sourceTree = "<group>"; };
 		B3FA81CA29DD61BD00F8833A /* Mute and Send.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mute and Send.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FA81CD29DD61BD00F8833A /* Mute_and_SendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mute_and_SendApp.swift; sourceTree = "<group>"; };
 		B3FA81CF29DD61BD00F8833A /* FaderMuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaderMuteView.swift; sourceTree = "<group>"; };
@@ -44,6 +100,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B3648A4E2A0B8C5E00D277EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3FA81C729DD61BD00F8833A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,11 +117,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3648A522A0B8C5E00D277EB /* Mute and Send Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				B3648A532A0B8C5E00D277EB /* Mute_and_Send_WatchApp.swift */,
+				B3648A552A0B8C5E00D277EB /* ContentView.swift */,
+				B3648A6F2A0C441000D277EB /* ChannelListWatchView.swift */,
+				B3648A742A0C4BDB00D277EB /* ChannelRowWatchView.swift */,
+				B3648A9E2A0CB1EB00D277EB /* BusRowWatchView.swift */,
+				B3648A772A0C4C8B00D277EB /* BusMasterWatchView.swift */,
+				B3648A9C2A0CB06D00D277EB /* BusSendWatchView.swift */,
+				B3648A572A0B8C5F00D277EB /* Assets.xcassets */,
+				B3648A592A0B8C5F00D277EB /* Preview Content */,
+				B3648A792A0C9AE300D277EB /* TestView.swift */,
+			);
+			path = "Mute and Send Watch Watch App";
+			sourceTree = "<group>";
+		};
+		B3648A592A0B8C5F00D277EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3648A5A2A0B8C5F00D277EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3648A662A0C0A6D00D277EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3FA81C129DD61BD00F8833A = {
 			isa = PBXGroup;
 			children = (
 				B3FA81CC29DD61BD00F8833A /* Mute and Send */,
+				B3648A522A0B8C5E00D277EB /* Mute and Send Watch Watch App */,
 				B3FA81CB29DD61BD00F8833A /* Products */,
+				B3648A662A0C0A6D00D277EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B3FA81CA29DD61BD00F8833A /* Mute and Send.app */,
+				B3648A512A0B8C5E00D277EB /* Mute and Send Watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +186,7 @@
 				B31BB12529FB85EB00431947 /* ControlViewModel.swift */,
 				B31BB12F2A01E3A800431947 /* MixerManager.swift */,
 				B31BB1312A02F36A00431947 /* SupportedMixers.swift */,
+				B3648A632A0B8CAF00D277EB /* WatchCommunications.swift */,
 			);
 			path = "Mute and Send";
 			sourceTree = "<group>";
@@ -103,6 +202,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B3648A502A0B8C5E00D277EB /* Mute and Send Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3648A5C2A0B8C5F00D277EB /* Build configuration list for PBXNativeTarget "Mute and Send Watch Watch App" */;
+			buildPhases = (
+				B3648A4D2A0B8C5E00D277EB /* Sources */,
+				B3648A4E2A0B8C5E00D277EB /* Frameworks */,
+				B3648A4F2A0B8C5E00D277EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mute and Send Watch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Mute and Send Watch Watch App";
+			productReference = B3648A512A0B8C5E00D277EB /* Mute and Send Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B3FA81C929DD61BD00F8833A /* Mute and Send */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3FA81D829DD61BF00F8833A /* Build configuration list for PBXNativeTarget "Mute and Send" */;
@@ -110,10 +228,12 @@
 				B3FA81C629DD61BD00F8833A /* Sources */,
 				B3FA81C729DD61BD00F8833A /* Frameworks */,
 				B3FA81C829DD61BD00F8833A /* Resources */,
+				B3648A6A2A0C0A6D00D277EB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B3648A692A0C0A6D00D277EB /* PBXTargetDependency */,
 			);
 			name = "Mute and Send";
 			productName = "Mute and Send";
@@ -130,6 +250,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					B3648A502A0B8C5E00D277EB = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					B3FA81C929DD61BD00F8833A = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -144,16 +267,28 @@
 				Base,
 			);
 			mainGroup = B3FA81C129DD61BD00F8833A;
+			packageReferences = (
+			);
 			productRefGroup = B3FA81CB29DD61BD00F8833A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B3FA81C929DD61BD00F8833A /* Mute and Send */,
+				B3648A502A0B8C5E00D277EB /* Mute and Send Watch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B3648A4F2A0B8C5E00D277EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3648A5B2A0B8C5F00D277EB /* Preview Assets.xcassets in Resources */,
+				B3648A582A0B8C5F00D277EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3FA81C829DD61BD00F8833A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,13 +301,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B3648A4D2A0B8C5E00D277EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3648A9D2A0CB06D00D277EB /* BusSendWatchView.swift in Sources */,
+				B3648A7A2A0C9AE300D277EB /* TestView.swift in Sources */,
+				B3648A782A0C4C8B00D277EB /* BusMasterWatchView.swift in Sources */,
+				B3648A622A0B8C6F00D277EB /* SupportedMixers.swift in Sources */,
+				B3648A9F2A0CB1EB00D277EB /* BusRowWatchView.swift in Sources */,
+				B3648A722A0C49C900D277EB /* MixerSelectionView.swift in Sources */,
+				B3648A5F2A0B8C6800D277EB /* X32OSCComms.swift in Sources */,
+				B3648A752A0C4BDB00D277EB /* ChannelRowWatchView.swift in Sources */,
+				B3648A732A0C4A7D00D277EB /* MixerAddView.swift in Sources */,
+				B3648A652A0B8D0A00D277EB /* WatchCommunications.swift in Sources */,
+				B3648A562A0B8C5E00D277EB /* ContentView.swift in Sources */,
+				B3648A602A0B8C6B00D277EB /* ControlViewModel.swift in Sources */,
+				B3648A612A0B8C6D00D277EB /* MixerManager.swift in Sources */,
+				B3648A542A0B8C5E00D277EB /* Mute_and_Send_WatchApp.swift in Sources */,
+				B3648A6D2A0C439700D277EB /* ChannelSendView.swift in Sources */,
+				B3648A702A0C441000D277EB /* ChannelListWatchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3FA81C629DD61BD00F8833A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B31BB1322A02F36A00431947 /* SupportedMixers.swift in Sources */,
 				B31BB1362A04C7F800431947 /* MixerSelectionView.swift in Sources */,
-				B3FA81D029DD61BD00F8833A /* FaderMuteView.swift in Sources */,
+				B3648A642A0B8CAF00D277EB /* WatchCommunications.swift in Sources */,
 				B31BB1382A04C9B600431947 /* MixerAddView.swift in Sources */,
 				B31BB12A29FCDB6100431947 /* SettingsView.swift in Sources */,
 				B3FA81CE29DD61BD00F8833A /* Mute_and_SendApp.swift in Sources */,
@@ -182,13 +340,82 @@
 				B3FA81DE29DD64EE00F8833A /* ChannelSendView.swift in Sources */,
 				B31BB12429F8ECD200431947 /* X32OSCComms.swift in Sources */,
 				B3FA81DC29DD61F500F8833A /* ChannelRowView.swift in Sources */,
+				B3648A6E2A0C43FE00D277EB /* FaderMuteView.swift in Sources */,
 				B31BB12C29FCDB9300431947 /* BusMasterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B3648A692A0C0A6D00D277EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3648A502A0B8C5E00D277EB /* Mute and Send Watch Watch App */;
+			targetProxy = B3648A682A0C0A6D00D277EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B3648A5D2A0B8C5F00D277EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mute and Send Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = RPM74Y7QUM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mute and Send Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "wqr.Mute-and-Send";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wqr.Mute-and-Send.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		B3648A5E2A0B8C5F00D277EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mute and Send Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = RPM74Y7QUM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mute and Send Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "wqr.Mute-and-Send";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wqr.Mute-and-Send.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 		B3FA81D629DD61BF00F8833A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -364,6 +591,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B3648A5C2A0B8C5F00D277EB /* Build configuration list for PBXNativeTarget "Mute and Send Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3648A5D2A0B8C5F00D277EB /* Debug */,
+				B3648A5E2A0B8C5F00D277EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B3FA81C529DD61BD00F8833A /* Build configuration list for PBXProject "Mute and Send" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

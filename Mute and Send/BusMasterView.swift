@@ -12,7 +12,7 @@ struct BusMasterView: View {
     
     
     var body: some View {
-        List(viewModel.busMasters) {row in
+        List(viewModel.busMasters.filter(enabledFilter)) {row in
             
             let faderBinding: Binding<Double> = Binding<Double>(get: {
                 return row.faderLevel
@@ -29,6 +29,16 @@ struct BusMasterView: View {
         }
 
     }
+    
+    func enabledFilter(_ channel: Control) -> Bool{
+        if (channel.isChannel){
+            return MixerManager.shared.activeMixerProfile.channelsEnabled[channel.num - 1]
+        }
+        else{
+            return MixerManager.shared.activeMixerProfile.busesEnabled[channel.num - 1]
+        }
+    }
+    
 }
 
 struct BusMasterView_Previews: PreviewProvider {
